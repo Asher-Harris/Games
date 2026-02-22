@@ -18,68 +18,34 @@ Morning → Hunt animals → Sacrifice at altar → Meet quota → Survive night
 
 ---
 
-## Phase 1: Foundation (Weeks 1-3)
+## Phase 1: Foundation (Submission Sprint)
 
-### Week 1: Environment Setup & Unreal Basics
+> **Tutorial done. Start building.** You already understand variables, events, and logic from web dev—Blueprints will click faster by doing than by watching more tutorials.
 
-**Learning Focus:** Get comfortable navigating UE5, understand the editor
+- [x] Complete "Your First Hour in Unreal Engine 5"
+- [ ] Create new UE5 project from the **Third Person template** (gives you a working character for free—do not use a blank project)
+- [ ] Create a new level and delete/ignore the default template level
+- [ ] Add terrain using the Landscape tool—raise some hills, carve out a forest clearing
+- [ ] Grab a free Megascans nature pack from Fab, place trees and rocks in the scene
+- [ ] Place two landmark actors: one for the **cabin** (safe zone), one for the **altar** (sacrifice point)—placeholder shapes are fine
+- [ ] Add a directional light and sky sphere, set a moody late-afternoon look
+- [ ] Build one Blueprint: walk up to the altar, press E, a counter increments
+- [ ] Add a basic HUD widget showing "Quota: X / 15" on screen
+- [ ] Walk through the space and make sure navigation feels open and readable
 
-- [ ] Install Unreal Engine 5.3+ via Epic Games Launcher
-- [ ] Complete "Your First Hour in Unreal Engine 5" (Epic's official tutorial)
-- [ ] Learn viewport navigation, placing actors, basic transforms
-- [ ] Create project with Third Person template (gives you working character movement for free)
-- [ ] Walk around the template level, break things, experiment
+**Tips:**
+- Use **Print String** nodes in Blueprints to debug—faster than anything else when you're starting out
+- Save constantly (Ctrl+S). UE5 will crash. It is not a matter of if.
+- Nanite and Lumen are enabled by default in UE5—they look great but can tank performance on lower-end hardware. If you're getting low framerates, turn them off in Project Settings first before optimizing anything else.
+- If you get stuck on a Blueprint, search YouTube for the exact feature + "UE5"—Matt Aspland's short tutorials are the fastest way to unblock yourself
 
-**Resources:**
-| Resource | Link | Time |
-|----------|------|------|
-| Your First Hour in UE5 | [dev.epicgames.com/tutorials](https://dev.epicgames.com/community/learning/tutorials) | 1 hour |
-| Unreal Sensei - Complete Beginner Course | YouTube | 2-3 hours |
-| Official UE5 Documentation | [docs.unrealengine.com](https://docs.unrealengine.com) | Reference |
-
-**Milestone:** Can create a new level, place objects, and run around with the default character.
-
----
-
-### Week 2: Blueprints Fundamentals
-
-**Learning Focus:** Visual scripting basics—this is how you'll build 90% of your game
-
-- [ ] Complete Epic's "Introduction to Blueprints" tutorial
-- [ ] Learn: Variables, functions, events, branches (if/else), loops
-- [ ] Build a simple interaction: Press E near an object → something happens
-- [ ] Create a basic HUD showing a number (this becomes your quota display later)
-- [ ] Practice: Make a door that opens, a light that toggles, a pickup that disappears
-
-**Resources:**
-| Resource | Link | Notes |
-|----------|------|-------|
-| Blueprints Essential Concepts | Epic Learning Portal | Start here |
-| Ryan Laley - Blueprint tutorials | YouTube | Excellent for beginners |
-| Matt Aspland - UE5 tutorials | YouTube | Short, focused videos |
-
-**Milestone:** Can create Blueprint actors with basic logic, display UI text on screen.
-
----
-
-### Week 3: First Playable Space
-
-**Learning Focus:** Level design basics, lighting, atmosphere
-
-- [ ] Create a simple forest clearing (your hunting ground)
-- [ ] Add basic terrain using Landscape tool
-- [ ] Place placeholder trees/rocks (use UE5 starter content or Fab assets)
-- [ ] Set up basic directional light (sun)
-- [ ] Add a placeholder "cabin" (safe zone) and "altar" (sacrifice point)
-- [ ] Make the space feel enclosed and navigable
-
-**Asset Sources to Use Now:**
+**Asset Sources:**
 | Source | What to Get | Notes |
 |--------|-------------|-------|
-| Fab (formerly Quixel/Marketplace) | Megascans trees, rocks, foliage | Free with UE subscription |
-| UE5 Starter Content | Basic shapes, materials | Built-in |
+| Fab | Megascans trees, rocks, foliage | Free with UE subscription |
+| UE5 Starter Content | Basic shapes, materials | Built-in, good for placeholders |
 
-**Milestone:** A small explorable forest area with cabin and altar landmarks. Doesn't need to look good yet.
+**Milestone:** A walkable forest space with cabin and altar landmarks, one working Blueprint interaction, and a quota number on screen.
 
 ---
 
@@ -378,10 +344,18 @@ Lower the overall ambient volume at night. Silence is scarier than noise. The mo
 
 | Tool | Best For | Quality | Speed |
 |------|----------|---------|-------|
+| Hunyuan 3D (Tencent) | Text/image to 3D, PBR-ready output, free studio | High | Fast |
 | Meshy.ai | 3D models from text/image | Medium | Fast |
 | Tripo AI | Character models | Medium-High | Fast |
 | Luma Genie | Organic shapes | Medium | Fast |
 | CSM.ai | Detailed models | High | Medium |
+
+**Hunyuan 3D Notes:**
+- Free online studio (Hunyuan 3D Studio)—no subscription, no credits, no local install required
+- **PBR-ready output**: textures come with base color, roughness, metallic, and normal maps already set up—these plug directly into UE5's material system without cleanup
+- GLB/OBJ output imports into UE5 via drag-and-drop into the Content Browser
+- Good for the altar, monster, and occult props where you want something unique that you can't find on Fab
+- Generate from text prompts or upload a reference image for more control over the result
 
 ### Recommended Workflow
 
