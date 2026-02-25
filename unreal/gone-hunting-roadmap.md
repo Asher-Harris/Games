@@ -44,14 +44,30 @@ Morning → Hunt animals → Sacrifice at altar → Meet quota → Survive night
 **Milestone:** ✅ The world looks like the game. All key assets are in. Nothing moves or works yet — that's Phase 2.
 
 
-## Phase 2: Core Systems (Weeks 4-8)
+## Milestone 2: Core Systems (End of Week 6 → Mid Week 9)
+
+**Total target effort:** ~15 hours
+**Goal:** A playable game loop. By the end of this milestone the core experience — hunt, sacrifice, meet quota, survive the monster — should be functional end-to-end.
 
 **Priority Order:** Day/night → Hunting → Quota → Monster
 Build in this order because each system depends on the previous one.
 
-### Week 4: Day/Night Cycle
+### Activity Breakdown
 
-**This is your core tension mechanic—everything else revolves around it**
+| Activity | Est. Hours |
+|----------|-----------|
+| Day/Night Cycle | 3 hrs |
+| Bow & Arrow Hunting System | 4 hrs |
+| Deer AI & Harvest Mechanic | 3 hrs |
+| Altar & Quota System | 3 hrs |
+| Monster AI | 2 hrs |
+| **Total** | **15 hrs** |
+
+---
+
+### Day/Night Cycle (3 hrs)
+
+**This is the core tension mechanic — everything else revolves around it**
 
 - [ ] Create a "GameManager" Blueprint to track game state
 - [ ] Implement time variable that advances (1 real second = X game minutes)
@@ -78,12 +94,13 @@ Time System (simplified):
 
 **Milestone:** Time passes visually. Day turns to night. You can see what time it is.
 
-### Week 5: Hunting System - Bow & Arrow
+---
+
+### Bow & Arrow Hunting System (4 hrs)
 
 - [ ] Create bow weapon Blueprint (visual mesh + logic)
 - [ ] Implement aim state (zoom camera, slow movement)
 - [ ] Create arrow projectile with physics
-- [ ] Add arrow trajectory preview (optional but helpful)
 - [ ] Spawn arrow on release, apply force in aim direction
 - [ ] Arrows stick into surfaces on collision
 - [ ] Add simple crosshair UI when aiming
@@ -96,7 +113,9 @@ Time System (simplified):
 
 **Milestone:** Can aim and shoot arrows that fly and stick into things.
 
-### Week 6: Animals & Hunting
+---
+
+### Deer AI & Harvest Mechanic (3 hrs)
 
 > **Deer 3D asset already done and placed** — skip straight to Blueprint and animation.
 
@@ -122,7 +141,9 @@ Deer AI State Machine:
 
 **Milestone:** Deer wander the forest. You can hunt and collect them.
 
-### Week 7: Altar & Quota System
+---
+
+### Altar & Quota System (3 hrs)
 
 > **Altar 3D asset already done** — skip to Blueprint logic.
 
@@ -147,7 +168,9 @@ Formula: BaseQuota * (1.3 ^ DayNumber) or similar
 
 **Milestone:** Full gameplay loop minus the monster. Hunt → sacrifice → meet quota → next day.
 
-### Week 8: Monster AI
+---
+
+### Monster AI (2 hrs)
 
 **The monster should feel inevitable, not smart. Simple but terrifying.**
 
