@@ -73,11 +73,11 @@ Build in this order because each system depends on the previous one.
 
 - [x] Add the Day Sequence plugin to the project
 - [x] Time advances automatically — day turns to night visually
-- [ ] Trigger a night event when time reaches **18.5** — print message to screen (e.g. "Night has fallen...")
+- [x] Trigger a night event when time reaches **18.5** — print message to screen (e.g. "Night has fallen...")
 
 **How to trigger the night event (Day Sequence):**
 ```
-In your GameManager or Level Blueprint:
+In BP_ThirdPersonGameMode:
 - On Tick: Get current time from the Day Sequence Actor
 - Check: If CurrentTime >= 18.5 AND bIsNight == false
   - Set bIsNight = true
@@ -94,12 +94,12 @@ In your GameManager or Level Blueprint:
 
 **Player can interact with the bed at night to skip to morning.**
 
-- [ ] Place a bed mesh in the cabin (Fab has free cabin furniture packs)
-- [ ] Create a **Bed Blueprint** with a Box Collision interaction zone
-- [ ] On player overlap: show prompt "Press E to Sleep"
-- [ ] On E press: check if `bIsNight == true` — if not, do nothing
-- [ ] If it is night: set Day Sequence time to **6.0** (morning)
-- [ ] Reset `bIsNight = false`
+- [x] Place a bed mesh in the cabin (Fab has free cabin furniture packs)
+- [x] Create a **Bed Blueprint** with a Box Collision interaction zone
+- [x] On player overlap: show prompt "Press E to Sleep"
+- [x] On E press: check if `bIsNight == true` — if not, do nothing
+- [x] If it is night: set Day Sequence time to **6.0** (morning)
+- [x] Reset `bIsNight = false`
 - [ ] Optional: brief fade to black before and after skipping
 
 **Implementation steps:**
@@ -113,7 +113,7 @@ In your GameManager or Level Blueprint:
 2. **Player Character Blueprint**
    - On E key pressed: check `bPlayerNearBed == true` AND `bIsNight == true`
    - If both true: call `SetTimeOfDay(6.0)` on the Day Sequence Actor
-   - Set `bIsNight = false` on the GameManager
+   - Set `bIsNight = false` on BP_ThirdPersonGameMode
 
 3. **How to set Day Sequence time via Blueprint:**
    ```
@@ -122,7 +122,7 @@ In your GameManager or Level Blueprint:
    ```
    *(The Day Sequence Actor has a built-in Set Time of Day function)*
 
-**Note:** `bIsNight` lives on your GameManager — the Bed Blueprint will need a reference to it. Either cast to GameManager, or use a Game Instance variable, or a simple Blueprint Interface.
+**Note:** `bIsNight` lives on `BP_ThirdPersonGameMode` — the Bed Blueprint will need a reference to it. Get it with: `Get Game Mode → Cast to BP_ThirdPersonGameMode`.
 
 **Milestone:** Player can sleep in the cabin bed at night to skip to morning.
 
