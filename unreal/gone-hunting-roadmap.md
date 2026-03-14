@@ -130,20 +130,22 @@ In BP_ThirdPersonGameMode:
 
 ### Bow & Arrow Hunting System (4 hrs)
 
-- [ ] Create bow weapon Blueprint (visual mesh + logic)
-- [ ] Implement aim state (zoom camera, slow movement)
-- [ ] Create arrow projectile with physics
-- [ ] Spawn arrow on release, apply force in aim direction
-- [ ] Arrows stick into surfaces on collision
-- [ ] Add simple crosshair UI when aiming
+- [x] Create bow weapon Blueprint (visual mesh + logic)
+- [x] Implement aim state (zoom camera, slow movement)
+- [x] Create arrow projectile with physics
+- [x] Spawn arrow on release, apply force in aim direction
+- [x] Arrows stick into surfaces on collision
+- [x] Add simple crosshair UI when aiming
+
+**Status:** Completed. Bow and arrow system finished by following this tutorial: [YouTube - Bow and Arrow Tutorial UE5](https://www.youtube.com/watch?v=sB25-mkmlDQ)
 
 **Resources:**
 | Resource | Notes |
 |----------|-------|
-| "Bow and Arrow Tutorial UE5" - various YouTube | Multiple options, pick one that makes sense |
+| Bow and Arrow tutorial used | https://www.youtube.com/watch?v=sB25-mkmlDQ |
 | Projectile Movement Component | Built-in UE5 component, handles physics |
 
-**Milestone:** Can aim and shoot arrows that fly and stick into things.
+**Milestone:** ✅ Can aim and shoot arrows that fly and stick into things.
 
 ---
 
