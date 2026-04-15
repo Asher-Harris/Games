@@ -65,8 +65,6 @@
 
 **What was built:** Deer behavior is now moving out of static world placement and into Blueprint-driven systems. `BP_Deer` has the core deer-side events needed to support runtime setup, and `BP_DeerSpawner` can create a random herd in the forest while avoiding the cleared center area.
 
-**Goal:** Finish the deer-side foundation so the final milestone can focus on the actual kill -> offer -> quota -> sleep loop instead of still building base wildlife systems.
-
 ### Current Status
 
 - [x] `BP_Deer` exists as the deer gameplay Blueprint
@@ -91,8 +89,6 @@
 
 **Primary Goal:** Land one complete, playable loop from hunting to bedtime with clear quota feedback.
 
-**Priority Order:** Deer death / on-the-spot offering -> Quota UI -> Night lock / bed gate -> Minimal fail state polish
-
 ### Activity Breakdown
 
 | Activity | Est. Hours |
@@ -100,47 +96,31 @@
 | Deer Death + On-the-Spot Offering | 4 hrs |
 | Quota UI | 2 hrs |
 | Night Lock + Bed Gate | 2 hrs |
-| Basic End State / Tuning | 2 hrs |
-| **Total** | **10 hrs** |
+| Basic End State / Tuning | 4 hrs |
+| **Total** | **12 hrs** |
+
 
 
 ### 1. Deer Death + On-the-Spot Offering (4 hrs)
 
-**Keep this simple.** No advanced carcass system is needed for the prototype.
-
-- [ ] Wire deer point value into the harvest / offering loop
-- [ ] When a deer is hit / killed, switch it into a dead state
-- [ ] Easiest presentation: deer falls over / collapses and stops roaming
-- [ ] Dead deer remains in the world so the player can walk up to it
+- [ ] Wire deer point value into the offering system
+- [ ] When a deer is killed, switch it into a dead state
+    - [ ] Easiest presentation: deer falls over and stops roaming
+- [ ] Dead deer remains in the world so the player can walk up to it and offer it
 - [ ] On overlap or interaction range: show `Press E to Offer`
 - [ ] On `E` press: offer that deer immediately on the spot and add its point value directly to the day's quota progress
-- [ ] Mark the deer as already harvested so it cannot be offered twice
-- [ ] If needed for reliability, respawn a replacement deer after one is harvested / removed
-
-**Prototype rule:** No altar deposit step, carrying system, or inventory transfer is needed. Walking up to a dead deer and pressing `E` is enough.
+- [ ] Mark the deer as offered so it cannot be offered twice
+- [ ] Re-spawn the deer after a sufficient amount of time so that the overall herd size remains the same
 
 **Milestone:** The player can kill a deer, approach the body, and convert it directly into quota progress.
 
-
 ### 2. Quota UI (2 hrs)
 
-- [ ] Add a simple HUD widget showing current quota progress
-- [ ] Display `Current Offered Points / Daily Quota`
 - [ ] Add a progress bar that fills as offerings are deposited
-- [ ] Show whether the player is currently carrying unoffered value
+- [ ] Quota met SFX
 - [ ] Add a simple `Quota Met` state when the requirement is reached
 
-**Keep it minimal:** one progress bar, one text value, one small carry-status text is enough.
-
-**Suggested first-pass values:**
-```text
-Day 1 quota: 15
-Day 2 quota: 20
-Day 3 quota: 30
-```
-
 **Milestone:** The player always knows whether they still need to hunt more or can safely end the day.
-
 
 ### 3. Night Lock + Bed Gate (2 hrs)
 
@@ -149,21 +129,15 @@ Day 3 quota: 30
 - [ ] If quota is met, bed interaction should allow sleep
 - [ ] On successful sleep: advance to morning, reset daily quota progress, and begin the next day
 
-**Core rule:** If quota is not met and it is nighttime, the game remains in nighttime until the player either meets quota or dies.
-
 **Milestone:** Bedtime becomes the checkpoint for success or failure of the day's hunt.
 
+### 4. Basic End State / Tuning (4 hrs)
 
-### 4. Basic End State / Tuning (2 hrs)
-
-- [ ] Add the smallest possible fail-state feedback if the player dies
-- [ ] Show days survived and/or total offered points
-- [ ] Add restart functionality if it is quick to implement
-- [ ] Tune deer point values, day length, and quota targets so one day feels achievable but not trivial
+- [ ] Balrog needs to spawn near the player when nighttime occurs
+- [ ] When Balrog and player collide the player should die
+- [ ] Add restart functionality so when the player dies they can restart
 
 **Nice-to-have only if fast:**
-- [ ] Simple sacrifice VFX
-- [ ] Short UI message when quota is met
-- [ ] Short sound cue on successful offering
-
-**Milestone:** The prototype has a readable win/fail rhythm even if presentation remains very rough.
+- [ ] Offering SFX
+- [ ] Death SFX
+- [ ] Other SFX
