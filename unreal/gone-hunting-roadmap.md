@@ -108,16 +108,17 @@
 - [x] When an arrow hits a deer, call deer-side kill logic from `BP_Arrow`
 - [x] On kill, offer that deer immediately and add its point value directly to the day's quota progress
 - [x] Mark the deer as consumed so it cannot score twice
-- [x] Delete the deer actor
-- [X] Set and tune the daily quota target in `BP_ThirdPersonGameMode`
+- [x] Delete the deer actor after it is consumed
+- [x] Set and tune the daily quota target in `BP_ThirdPersonGameMode`
+- [x] Add deer kill SFX feedback
 
 **Milestone:** The player can shoot a deer and convert it directly into quota progress.
 
 ### 2. Quota UI (2 hrs)
 
-- [ ] Add a progress bar that fills as offerings are deposited
-- [ ] Quota met SFX
-- [ ] Add a simple `Quota Met` state when the requirement is reached
+- [x] Add a progress bar that fills as offerings are deposited
+- [x] Quota met SFX
+- [x] Add a simple `Quota Met` state when the requirement is reached
 
 **Milestone:** The player always knows whether they still need to hunt more or can safely end the day.
 
