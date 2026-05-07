@@ -101,18 +101,17 @@
 
 
 
-### 1. Deer Death + On-the-Spot Offering (4 hrs)
+### 1. Deer Kill + Immediate Offering (4 hrs)
 
-- [ ] Wire deer point value into the offering system
-- [ ] When a deer is killed, switch it into a dead state
-    - [ ] Easiest presentation: deer falls over and stops roaming
-- [ ] Dead deer remains in the world so the player can walk up to it and offer it
-- [ ] On overlap or interaction range: show `Press E to Offer`
-- [ ] On `E` press: offer that deer immediately on the spot and add its point value directly to the day's quota progress
-- [ ] Mark the deer as offered so it cannot be offered twice
-- [ ] Re-spawn the deer after a sufficient amount of time so that the overall herd size remains the same
+- [x] Wire deer point value into the offering / quota system
+- [x] Add a dedicated deer body hitbox so arrow hits align to the torso better than the movement capsule
+- [x] When an arrow hits a deer, call deer-side kill logic from `BP_Arrow`
+- [x] On kill, offer that deer immediately and add its point value directly to the day's quota progress
+- [x] Mark the deer as consumed so it cannot score twice
+- [x] Delete the deer actor
+- [X] Set and tune the daily quota target in `BP_ThirdPersonGameMode`
 
-**Milestone:** The player can kill a deer, approach the body, and convert it directly into quota progress.
+**Milestone:** The player can shoot a deer and convert it directly into quota progress.
 
 ### 2. Quota UI (2 hrs)
 
