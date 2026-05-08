@@ -124,20 +124,19 @@
 
 ### 3. Night Lock + Bed Gate (2 hrs)
 
-- [ ] When night begins, keep the world in night state instead of letting the cycle roll back into day
-- [ ] If quota is not met, bed interaction should show a failure message and deny sleep
-- [ ] If quota is met, bed interaction should allow sleep
-- [ ] On successful sleep: advance to morning, reset daily quota progress, and begin the next day
+- [X] When night begins, keep the world in night state instead of letting the cycle roll back into day
+- [X] If quota is not met, bed should not allow sleep
+- [X] If quota is met, bed interaction should allow sleep
+- [X] On successful sleep: advance to morning, reset daily quota progress, and begin the next day
 
 **Milestone:** Bedtime becomes the checkpoint for success or failure of the day's hunt.
 
 ### 4. Basic End State / Tuning (4 hrs)
 
-- [ ] Balrog needs to spawn near the player when nighttime occurs
-- [ ] When Balrog and player collide the player should die
-- [ ] Add restart functionality so when the player dies they can restart
+- [X] Balrog needs to spawn near the player when nighttime occurs
+- [X] When Balrog and player collide the player should die
 
 **Nice-to-have only if fast:**
-- [ ] Offering SFX
-- [ ] Death SFX
-- [ ] Other SFX
+- [X] Offering SFX
+- [X] Death SFX
+- [X] Other SFX
