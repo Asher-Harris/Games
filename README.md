@@ -1,5 +1,5 @@
 # Games
-![Would you rather](assets/would-you-rather-meme.webp)
+![Would you rather](assets/games.jpg)
 
 ## Godot
 
@@ -9,6 +9,22 @@ Built following [How to make a Video Game - Godot Beginner Tutorial](https://www
 
 ## Unreal
 
-### Tutorial
+### Gone Hunting
 
-Built following [Your First Hour in Unreal Engine 5.2](https://dev.epicgames.com/community/learning/courses/3ke/your-first-hour-in-unreal-engine-5-2/vvdk/your-first-hour-in-unreal-engine-5-2-overview) by Mathew Wadstein
+A horror survival prototype built in Unreal Engine 5 over one semester. Hunt deer, meet your daily quota, and survive the night.
+
+#### Milestone 1: Foundation
+
+[![Milestone 1: Foundation](assets/Milestone%201.jpg)](https://youtu.be/uD1s4kUGC8Q)
+
+#### Milestone 2: Core Systems
+
+[![Milestone 2: Core Systems](assets/Milestone%202.jpg)](https://youtu.be/m_w6MXXpTn8)
+
+#### Milestone 3: Deer Systems & Spawn Management
+
+[![Milestone 3: Deer Systems & Spawn Management](assets/Milestone%203.jpg)](https://youtu.be/IYE1-JfLRQU)
+
+#### Milestone 4: Final Prototype Gameplay Loop
+
+[![Milestone 4: Final Prototype Gameplay Loop](assets/Milestone%204.jpg)](https://youtu.be/DQjUnd86t38)
