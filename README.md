@@ -1,12 +1,6 @@
 # Games
 ![Would you rather](assets/games.jpg)
 
-## Godot
-
-### Tutorial
-
-Built following [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by Brackeys.
-
 ## Unreal
 
 ### Gone Hunting
@@ -28,3 +22,9 @@ A horror survival prototype built in Unreal Engine 5 over one semester. Hunt dee
 #### Milestone 4: Final Prototype Gameplay Loop
 
 [![Milestone 4: Final Prototype Gameplay Loop](assets/Milestone%204.jpg)](https://youtu.be/DQjUnd86t38)
+
+## Godot
+
+### Tutorial
+
+Built following [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by Brackeys.
