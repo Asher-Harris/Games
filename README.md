@@ -1,10 +1,14 @@
 # Games
 
-## Unreal
+Game development projects built with Unreal Engine 5 and Godot.
 
-### Gone Hunting
+## [Unreal Engine 5](unreal/)
 
-A horror survival prototype built in Unreal Engine 5 over one semester. Hunt deer, meet your daily quota, and survive the night.
+---
+
+### [Gone Hunting](unreal/GoneHunting/)
+
+A one-semester horror survival prototype. Hunt deer, meet your daily quota, and survive the night.
 
 #### Milestone 1: Foundation
 
@@ -22,10 +26,14 @@ A horror survival prototype built in Unreal Engine 5 over one semester. Hunt dee
 
 [![Milestone 4: Final Prototype Gameplay Loop](assets/Milestone%204.jpg)](https://youtu.be/DQjUnd86t38)
 
-## Godot
+---
 
-### Tutorial
+## [Godot](godot/)
 
-Built following [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by Brackeys.
+### [Beginner tutorial](godot/tutorial/)
+
+Built by following [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by Brackeys.
+
+---
 
 ![Would you rather](assets/games.jpg)
