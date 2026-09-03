@@ -24,3 +24,40 @@ Desktop.ini
 # General
 # ==================
 *.log
+
+# Third-party Unreal source assets that cannot be redistributed
+/unreal/GoneHunting/Content/PN_interactiveSpruceForest/
+/unreal/GoneHunting/Content/MWLandscapeAutoMaterial/
+/unreal/GoneHunting/Content/Survival_Character/
+/unreal/GoneHunting/Content/__ExternalActors__/Survival_01/
+/unreal/GoneHunting/Content/__ExternalActors__/Survival_Character/
+/unreal/GoneHunting/Content/__ExternalObjects__/Survival_Character/
+/unreal/GoneHunting/Content/Fab/Bed/Bed/Materials/
+/unreal/GoneHunting/Content/Fab/Bed/Bed/StaticMeshes/
+/unreal/GoneHunting/Content/Fab/Street_lighting_torch/street_lighting_torch/Materials/
+/unreal/GoneHunting/Content/Fab/Street_lighting_torch/street_lighting_torch/StaticMeshes/
+/unreal/GoneHunting/Content/Fab/Street_lighting_torch/street_lighting_torch/Textures/
+/unreal/GoneHunting/Content/Fab/Wooden_House/
+/unreal/GoneHunting/Content/Fab/Realistic_Deer_3D_Model_2_0__Demo_Free_Download_/
+
+# Local art without recorded redistribution terms
+/unreal/GoneHunting/Content/Assets/Props/Altar/
+/unreal/GoneHunting/Content/Assets/Props/ElkMonster/
+/unreal/GoneHunting/Content/Assets/Props/Balrog/Meshes/
+/unreal/GoneHunting/Content/Assets/Props/Balrog/Textures/
+/unreal/GoneHunting/Content/Assets/Props/Deer/Meshes/
+/unreal/GoneHunting/Content/Assets/Props/Deer/Textures/
+/unreal/GoneHunting/Content/Assets/Props/Deer/Animations/A_Deer_*.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Arrow/SM_*.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Arrow/T_Arrow.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Arrow/T_Arrow_Normal.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Bow/ElvenBow_*.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Bow/SK_ElvenBow*.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Bow/T_Bow_Base.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/Bow/T_Bow_Normal.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/SFX/A_Hit.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/SFX/A_Shoot.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/SFX/ATT_A_Hit.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/SFX/SFX_ArrowHit.uasset
+/unreal/GoneHunting/Content/Assets/Props/BowAndArrow/SFX/SFX_BowShoot.uasset
+/unreal/GoneHunting/Content/Characters/Mannequins/Anims/Bow/A_*.uasset

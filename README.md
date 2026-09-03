@@ -34,6 +34,8 @@ A one-semester horror survival prototype. Hunt deer, meet your daily quota, and 
 
 Built by following [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by Brackeys.
 
----
+## Source availability
 
-![Would you rather](assets/games.jpg)
+This is a portfolio repository, not an open-source release. Raw third-party art and other assets without verifiable redistribution terms are not included. A fresh Unreal Engine checkout may contain missing asset references.
+
+See [Third-party content](THIRD_PARTY_NOTICES.md) for included licenses and excluded asset dependencies.
