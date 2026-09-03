@@ -12,6 +12,12 @@ The project in `godot/tutorial` follows the Brackeys beginner tutorial and inclu
 
 Parts of `unreal/GoneHunting/Content/Characters/Mannequins`, `Input`, `LevelPrototyping`, and `ThirdPerson` originated from Unreal Engine templates or examples. Epic permits distribution of Examples, including modified Examples, under the [Unreal Engine End User License Agreement](https://www.unrealengine.com/eula/unreal).
 
+### AI-generated Balrog
+
+The repository author generated the Balrog model and textures with Nano Banana Pro and Hunyuan 3D, then prepared the output with Photoshop and Blender. The [3D asset workflow](unreal/3d-asset-workflow.md) records the process. These files are identified here as AI-generated content.
+
+[Google's Terms of Service](https://policies.google.com/terms?hl=en-US) state that Google does not claim ownership of original content generated through its services. Section 5.3 of the [Tencent Hunyuan 3D User Service Agreement](https://rule.tencent.com/rule/202501080004) states that rights in generated content remain with the user or lawful rights holder.
+
 ### Freesound audio
 
 | Repository asset | Source | License |
@@ -38,6 +44,6 @@ Fab and Unreal Engine Marketplace licenses generally permit using purchased or f
 | [Wooden House](https://www.fab.com/listings/2a0dd0d8-933d-4b3b-be36-073149b0b3d6) | `Content/Fab/Wooden_House` |
 | [Fab torch asset](https://www.fab.com/listings/93779b57-7ffa-4e60-9a69-254d8e952668) | Imported materials, meshes, and textures under `Content/Fab/Street_lighting_torch` |
 
-The imported 3D source art for the Balrog and deer, and media downloaded for the bow tutorial, are also excluded because this repository does not contain enough information to verify redistribution rights. The gameplay Blueprints and other original integration work remain included.
+The deer model, textures, and imported animation sequences remain excluded because their source is unknown. Media supplied with the [Unreal University bow and arrow tutorial](https://www.youtube.com/watch?v=sB25-mkmlDQ&t=354s) also remains excluded. Its [download page](https://www.unreal-university.com/pages/bowandarrow) and archive do not state redistribution terms. The gameplay Blueprints and other original integration work remain included.
 
 Acquire any excluded dependencies from their publishers under your own account and license. Asset versions and import paths can differ, so restoring them may require reconnecting Unreal Engine references.
