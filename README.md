@@ -1,5 +1,4 @@
 # Games
-![Would you rather](assets/games.jpg)
 
 ## Unreal
 
@@ -28,3 +27,5 @@ A horror survival prototype built in Unreal Engine 5 over one semester. Hunt dee
 ### Tutorial
 
 Built following [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by Brackeys.
+
+![Would you rather](assets/games.jpg)
